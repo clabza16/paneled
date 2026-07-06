@@ -50,6 +50,18 @@
   .hero .cta{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
   .hero .note{margin-top:16px;font-size:13px;color:var(--muted)}
 
+  /* hero visual + who image */
+  .hero-visual{margin:34px auto 2px;max-width:1000px}
+  .hero-visual img{width:100%;height:auto;border-radius:20px;border:1px solid var(--line);box-shadow:0 30px 64px rgba(13,148,136,.14);display:block}
+  .who-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+  @media(max-width:820px){.who-wrap{grid-template-columns:1fr;gap:26px}}
+  .who-wrap .eyebrow{text-align:left}
+  .who-wrap h2{text-align:left;margin:12px 0 0;max-width:none}
+  .who-wrap .lead{text-align:left;margin:14px 0 0;max-width:none}
+  .who-wrap .who-grid{justify-content:flex-start;margin-top:26px}
+  .who-img img{width:100%;height:auto;border-radius:20px;box-shadow:0 24px 52px rgba(15,23,42,.14);display:block}
+  @media(max-width:820px){.who-img{order:-1}}
+
   /* stats */
   .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:52px auto 0;max-width:920px}
   @media(max-width:720px){.stats{grid-template-columns:1fr}}
@@ -138,6 +150,8 @@
     </div>
     <div class="note">Built for groups adding 20–50 clinicians a year. No more payer-by-payer spreadsheets.</div>
 
+    <div class="hero-visual"><img src="hero-abstract.jpg" width="1600" height="900" alt="A provider's data flowing through every payer and converging into an approved, in-network badge" loading="lazy" /></div>
+
     <div class="stats">
       <div class="stat"><div class="n"><span class="u">$9,000</span>/day</div><div class="l">Lost per provider stuck in credentialing limbo — revenue you can't bill until they're in-network.</div></div>
       <div class="stat"><div class="n">60–120<span class="u"> days</span></div><div class="l">Typical time to get a behavioral health provider paneled — payer by payer, portal by portal.</div></div>
@@ -171,17 +185,20 @@
 </section>
 
 <section class="sec alt" id="who">
-  <div class="wrap">
-    <div class="eyebrow">Who it's for</div>
-    <h2>If you're hiring faster than you can credential, this is for you.</h2>
-    <p class="lead">Enterprise credentialing platforms are built for hospital systems and priced for them. Paneled is built for the growing group that's still doing this in spreadsheets — or paying an agency by the hour.</p>
-    <div class="who-grid">
-      <span class="chip">Mental health group practices</span>
-      <span class="chip">ABA / autism therapy groups</span>
-      <span class="chip">Multi-state telehealth practices</span>
-      <span class="chip">10–60 clinicians, scaling fast</span>
-      <span class="chip">PE / VC-backed platforms</span>
+  <div class="wrap who-wrap">
+    <div class="who-copy">
+      <div class="eyebrow">Who it's for</div>
+      <h2>If you're hiring faster than you can credential, this is for you.</h2>
+      <p class="lead">Enterprise credentialing platforms are built for hospital systems and priced for them. Paneled is built for the growing group that's still doing this in spreadsheets — or paying an agency by the hour.</p>
+      <div class="who-grid">
+        <span class="chip">Mental health group practices</span>
+        <span class="chip">ABA / autism therapy groups</span>
+        <span class="chip">Multi-state telehealth practices</span>
+        <span class="chip">10–60 clinicians, scaling fast</span>
+        <span class="chip">PE / VC-backed platforms</span>
+      </div>
     </div>
+    <div class="who-img"><img src="hero-human.jpg" width="1500" height="844" alt="A behavioral health clinician at work — the kind of provider Paneled gets in-network faster" loading="lazy" /></div>
   </div>
 </section>
 
