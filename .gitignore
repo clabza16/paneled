@@ -1,0 +1,6 @@
+# Publish ONLY the static site. Everything else (ESTADO.md, notes) stays private.
+*
+!.gitignore
+!.nojekyll
+!index.html
+!README.md
